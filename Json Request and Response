@@ -1,0 +1,62 @@
+SaveEmp:http://localhost:8056/api/v1/saveEmp
+ 
+
+Request Json:
+
+{
+    "empId":1,
+    "empName":"Dhoni",
+    "empDept":"Cricket",
+    "companyName":"Bcci"
+}
+
+Response Json:
+ Employee with '953' has been Saved
+==========================================================
+ 
+employeeList:http://localhost:8056/api/v1/employeeList
+
+Request Json:
+
+
+Response Json:
+[
+    {
+        "empId": 952,
+        "empName": "Dhoni",
+        "empDept": "Cricket",
+        "companyName": "Bcci"
+    },
+    {
+        "empId": 953,
+        "empName": "Raina",
+        "empDept": "Cricket",
+        "companyName": "Bcci"
+    },
+    {
+        "empId": 954,
+        "empName": "Living Stone",
+        "empDept": "Cricket",
+        "companyName": "England"
+    }
+]
+=========================================================
+
+getEmployeeByID:http://localhost:8056/api/v1/getEmployee/953
+
+
+Response Json:
+{
+    "empId": 953,
+    "empName": "Raina",
+    "empDept": "Cricket",
+    "companyName": "Bcci"
+}
+========================================================
+
+deleteEmployee:http://localhost:8056/api/v1/deleteEmployee/953
+
+Response Json:
+
+Employee with '953' has been deleted
+
